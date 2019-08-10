@@ -1,6 +1,6 @@
 export default {
-  name: "category",
-  title: "Catégorie",
+  name: "color",
+  title: "Couleur",
   type: "document",
   fields: [
     {
@@ -9,12 +9,11 @@ export default {
       type: "string"
     },
     {
-      name: "slug",
-      title: "Slug",
-      type: "slug",
+      name: "hexa",
+      title: "Hexa",
+      type: "string",
       options: {
-        source: "title",
-        maxLength: 96
+        maxLength: 6
       }
     }
   ]

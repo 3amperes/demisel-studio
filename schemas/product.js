@@ -1,6 +1,6 @@
 export default {
   name: "product",
-  title: "Product",
+  title: "Bijoux",
   type: "document",
   fields: [
     {
@@ -12,26 +12,34 @@ export default {
       name: "slug",
       title: "Slug",
       type: "slug",
+      collapsible: true,
+      collapsed: true,
       options: {
         source: "title",
         maxLength: 96
       }
     },
     {
-      title: "variante par défault",
-      name: "defaultProductVariant",
-      type: "productVariant"
+      name: "thumbnail",
+      title: "Vignette",
+      type: "figure"
     },
     {
-      title: "Variantes",
-      name: "variants",
-      type: "array",
-      of: [
-        {
-          title: "Variante",
-          type: "productVariant"
-        }
-      ]
+      name: "description",
+      title: "Description",
+      type: "richText"
+    },
+    {
+      name: "specification",
+      title: "Spécification",
+      type: "text"
+    },
+    {
+      name: "price",
+      title: "Prix",
+      type: "price",
+      collapsible: true,
+      collapsed: false
     },
     {
       title: "Tags",
@@ -47,28 +55,35 @@ export default {
       }
     },
     {
-      name: "categories",
-      title: "Categories",
+      name: "category",
+      title: "Catégorie",
+      type: "reference",
+      to: { type: "category" }
+    },
+    {
+      name: "model",
+      title: "Modèle",
+      type: "reference",
+      to: { type: "model" }
+    },
+    {
+      name: "colors",
+      title: "Couleurs",
+      type: "reference",
       type: "array",
       of: [
         {
           type: "reference",
-          to: { type: "category" }
+          to: { type: "color" }
         }
       ]
-    },
-    {
-      name: "description",
-      title: "Description",
-      type: "blockContent"
     }
   ],
-
   preview: {
     select: {
       title: "title",
       manufactor: "manufactor.title",
-      media: "defaultProductVariant.images[0]"
+      media: "thumbnail.image"
     }
   }
 };
