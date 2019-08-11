@@ -67,6 +67,12 @@ export default {
       to: { type: "model" }
     },
     {
+      name: "collection",
+      title: "Collection",
+      type: "reference",
+      to: { type: "collection" }
+    },
+    {
       name: "colors",
       title: "Couleurs",
       type: "reference",
