@@ -12,31 +12,29 @@ export default {
   title: "Prix",
   name: "price",
   type: "object",
+  options: {
+    collapsible: true
+  },
   fields: [
     {
-      name: "unitPrice",
+      name: "salePrice",
       type: "number",
-      title: "Prix unitaire"
+      title: "Prix de vente"
     },
     {
-      name: "proPrice",
+      name: "dealerPrice",
       type: "number",
-      title: "Prix pro"
+      title: "Prix revendeur"
     },
     {
-      name: "isInSold",
-      type: "boolean",
-      title: "En solde ?"
-    },
-    {
-      name: "altPrice",
+      name: "promoPrice",
       type: "number",
-      title: "Prix soldé"
+      title: "Prix promo"
     },
     {
       name: "weight",
       type: "number",
-      title: "Poid (en gramme)"
+      title: "Poids (en gramme)"
     }
   ]
 };

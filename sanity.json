@@ -5,20 +5,23 @@
   },
   "api": {
     "projectId": "zgsfe4tu",
-    "dataset": "production"
+    "dataset": "staging"
   },
   "plugins": [
     "@sanity/base",
     "@sanity/components",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool",
-    "barcode-input"
+    "@sanity/desk-tool"
   ],
   "parts": [
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema.js"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./deskStructure.js"
     }
   ]
 }

@@ -12,11 +12,6 @@ export default {
       name: "alt",
       title: "Text alternatif",
       type: "string"
-    },
-    {
-      name: "caption",
-      title: "Légende",
-      type: "text"
     }
   ]
 };

@@ -1,6 +1,6 @@
 export default {
   name: "product",
-  title: "Bijoux",
+  title: "Bijou",
   type: "document",
   fields: [
     {
@@ -12,9 +12,9 @@ export default {
       name: "slug",
       title: "Slug",
       type: "slug",
-      collapsible: true,
-      collapsed: true,
       options: {
+        collapsible: true,
+        collapsed: true,
         source: "title",
         maxLength: 96
       }
@@ -42,52 +42,16 @@ export default {
       collapsed: false
     },
     {
-      title: "Tags",
-      name: "tags",
-      type: "array",
-      of: [
-        {
-          type: "string"
-        }
-      ],
-      options: {
-        layout: "tags"
-      }
-    },
-    {
-      name: "category",
-      title: "Catégorie",
-      type: "reference",
-      to: { type: "category" }
-    },
-    {
       name: "model",
       title: "Modèle",
       type: "reference",
       to: { type: "model" }
-    },
-    {
-      name: "collection",
-      title: "Collection",
-      type: "reference",
-      to: { type: "collection" }
-    },
-    {
-      name: "colors",
-      title: "Couleurs",
-      type: "reference",
-      type: "array",
-      of: [
-        {
-          type: "reference",
-          to: { type: "color" }
-        }
-      ]
     }
   ],
   preview: {
     select: {
       title: "title",
+      subtitle: "model.title",
       manufactor: "manufactor.title",
       media: "thumbnail.image"
     }

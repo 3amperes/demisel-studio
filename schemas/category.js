@@ -5,7 +5,12 @@ export default {
   fields: [
     {
       name: "title",
-      title: "Title",
+      title: "Titre",
+      type: "string"
+    },
+    {
+      name: "shortName",
+      title: "Title court",
       type: "string"
     },
     {

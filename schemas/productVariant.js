@@ -2,6 +2,10 @@ export default {
   title: "Product variant",
   name: "productVariant",
   type: "object",
+  options: {
+    collapsible: true,
+    collapsed: false
+  },
   fields: [
     {
       title: "Title",
@@ -9,27 +13,45 @@ export default {
       type: "string"
     },
     {
-      title: "Price",
+      name: "thumbnail",
+      title: "Vignette",
+      type: "figure"
+    },
+    {
+      name: "description",
+      title: "Description",
+      type: "richText"
+    },
+    {
+      name: "specification",
+      title: "Spécification",
+      type: "text"
+    },
+    {
       name: "price",
-      type: "number"
+      title: "Prix",
+      type: "price",
+      collapsible: true,
+      collapsed: false
     },
     {
-      title: "SKU",
-      name: "sku",
-      type: "string"
-    },
-    {
-      name: "images",
-      title: "Images",
+      title: "Tags",
+      name: "tags",
       type: "array",
       of: [
         {
-          type: "image",
-          options: {
-            hotspot: true
-          }
+          type: "string"
         }
-      ]
+      ],
+      options: {
+        layout: "tags"
+      }
+    },
+    {
+      name: "collection",
+      title: "Collection",
+      type: "reference",
+      to: { type: "collection" }
     }
   ]
 };

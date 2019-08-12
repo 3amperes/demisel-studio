@@ -4,12 +4,13 @@ import createSchema from "part:@sanity/base/schema-creator";
 import schemaTypes from "all:part:@sanity/base/schema-type";
 
 // We import object and document schemas
+import config from "./config";
 import category from "./category";
 import model from "./model";
 import collection from "./collection";
-import color from "./color";
 import price from "./price";
 import product from "./product";
+import productVariant from "./productVariant";
 import richText from "./richText";
 import figure from "./figure";
 
@@ -22,11 +23,12 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
-    product,
-    model,
+    config,
     category,
+    model,
+    product,
+    productVariant,
     collection,
-    color,
     price,
     richText,
     figure
