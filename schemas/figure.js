@@ -1,17 +1,24 @@
 export default {
   name: "figure",
-  title: "Figure",
-  type: "object",
+  type: "image",
+  options: {
+    hotspot: true,
+    metadata: ["palette"]
+  },
   fields: [
     {
-      name: "image",
-      title: "Image",
-      type: "image"
+      name: "alt",
+      type: "string",
+      title: "Texte alternatif",
+      options: {
+        isHighlighted: true // <-- make this field easily accessible
+      }
     },
     {
-      name: "alt",
-      title: "Text alternatif",
-      type: "string"
+      // Editing this field will be hidden behind an "Edit"-button
+      name: "attribution",
+      type: "string",
+      title: "Attribution"
     }
   ]
 };

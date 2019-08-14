@@ -9,19 +9,15 @@ export default {
       type: "string"
     },
     {
-      name: "slug",
-      title: "Slug",
-      type: "slug",
-      options: {
-        source: "title",
-        maxLength: 96
-      }
-    },
-    {
       name: "category",
       title: "Catégorie",
       type: "reference",
       to: { type: "category" }
+    },
+    {
+      name: "thumbnail",
+      title: "Vignette",
+      type: "figure"
     },
     {
       name: "description",
@@ -46,5 +42,11 @@ export default {
       type: "array",
       of: [{ type: "figure" }]
     }
-  ]
+  ],
+  preview: {
+    select: {
+      title: "title",
+      media: "thumbnail.image"
+    }
+  }
 };

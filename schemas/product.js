@@ -6,18 +6,49 @@ export default {
     {
       name: "title",
       title: "Nom",
-      type: "string"
+      type: "string",
+      validation: Rule => Rule.required().warning("Obligatoire")
+    },
+    // {
+    //   name: "slug",
+    //   title: "Slug",
+    //   type: "slug",
+    //   options: {
+    //     collapsible: true,
+    //     collapsed: true,
+    //     source: "title",
+    //     maxLength: 96
+    //   }
+    // },
+    {
+      name: "category",
+      title: "Catégorie",
+      type: "reference",
+      validation: Rule => Rule.required().warning("Obligatoire"),
+      to: [{ type: "category" }]
     },
     {
-      name: "slug",
-      title: "Slug",
-      type: "slug",
+      name: "model",
+      title: "Modèle",
+      type: "reference",
+      description: "un modèle ?",
+      to: [{ type: "model" }]
+    },
+    {
+      name: "collections",
+      title: "Collections",
+      type: "array",
+      validation: Rule => Rule.unique(),
       options: {
-        collapsible: true,
-        collapsed: true,
-        source: "title",
-        maxLength: 96
-      }
+        layout: "list",
+        editModal: "dialog"
+      },
+      of: [
+        {
+          type: "reference",
+          to: [{ type: "collection" }]
+        }
+      ]
     },
     {
       name: "thumbnail",
@@ -40,20 +71,13 @@ export default {
       type: "price",
       collapsible: true,
       collapsed: false
-    },
-    {
-      name: "model",
-      title: "Modèle",
-      type: "reference",
-      to: { type: "model" }
     }
   ],
   preview: {
     select: {
       title: "title",
       subtitle: "model.title",
-      manufactor: "manufactor.title",
-      media: "thumbnail.image"
+      media: "thumbnail"
     }
   }
 };
