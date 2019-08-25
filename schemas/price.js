@@ -27,7 +27,7 @@ export default {
       title: "Prix revendeur"
     },
     {
-      name: "promoPrice",
+      name: "discountPrice",
       type: "number",
       title: "Prix promo"
     },
