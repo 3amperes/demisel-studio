@@ -10,9 +10,10 @@ import model from "./model";
 import collection from "./collection";
 import price from "./price";
 import product from "./product";
-import productVariant from "./productVariant";
 import richText from "./richText";
 import figure from "./figure";
+import slide from "./slide";
+import link from "./link";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -27,10 +28,11 @@ export default createSchema({
     category,
     model,
     product,
-    productVariant,
     collection,
     price,
     richText,
-    figure
+    figure,
+    slide,
+    link
   ])
 });
