@@ -16,6 +16,30 @@ export default {
         source: "title",
         maxLength: 96
       }
+    },
+    {
+      name: "thumbnail",
+      title: "Vignette",
+      type: "figure"
+    },
+    {
+      name: "description",
+      title: "Description",
+      type: "richText"
+    },
+    {
+      name: "sections",
+      title: "Sections",
+      type: "array",
+      options: {
+        layout: "list",
+        editModal: "dialog"
+      },
+      of: [
+        {
+          type: "section"
+        }
+      ]
     }
   ]
 };
