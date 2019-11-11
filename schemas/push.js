@@ -1,22 +1,22 @@
 export default {
-  name: "section",
-  title: "Section",
-  type: "object",
+  name: "push",
+  title: "Push",
+  type: "document",
   fields: [
     {
       name: "title",
-      title: "Titre",
+      title: "Title",
       type: "string"
     },
     {
-      name: "image",
-      title: "Image",
+      name: "thumbnail",
+      title: "Vignette",
       type: "figure"
     },
     {
-      name: "description",
-      title: "Description",
-      type: "richText"
+      name: "link",
+      title: "Lien",
+      type: "url"
     }
   ],
   preview: {

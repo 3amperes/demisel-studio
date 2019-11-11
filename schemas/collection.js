@@ -37,7 +37,7 @@ export default {
       },
       of: [
         {
-          type: "section"
+          type: "slide"
         }
       ]
     }

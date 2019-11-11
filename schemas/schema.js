@@ -14,6 +14,8 @@ import richText from "./richText";
 import figure from "./figure";
 import slide from "./slide";
 import link from "./link";
+import push from "./push";
+import pushes from "./pushes";
 import section from "./section";
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -35,6 +37,8 @@ export default createSchema({
     figure,
     slide,
     link,
+    push,
+    pushes,
     section
   ])
 });

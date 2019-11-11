@@ -13,6 +13,16 @@ export default {
       title: "Carousel",
       type: "array",
       of: [{ type: "slide" }]
+    },
+    {
+      name: "introduction",
+      title: "Intoduction",
+      type: "section"
+    },
+    {
+      name: "pushes",
+      title: "Accès directs",
+      type: "pushes"
     }
   ]
 };
