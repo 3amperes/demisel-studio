@@ -17,7 +17,7 @@ export default {
     {
       name: "introduction",
       title: "Intoduction",
-      type: "section"
+      type: "article"
     },
     {
       name: "pushes",

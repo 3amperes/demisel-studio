@@ -1,7 +1,7 @@
 export default {
   name: "push",
   title: "Push",
-  type: "document",
+  type: "object",
   fields: [
     {
       name: "title",

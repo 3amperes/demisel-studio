@@ -16,7 +16,8 @@ import slide from "./slide";
 import link from "./link";
 import push from "./push";
 import pushes from "./pushes";
-import section from "./section";
+import article from "./article";
+import collectionItem from "./collectionItem";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -39,6 +40,7 @@ export default createSchema({
     link,
     push,
     pushes,
-    section
+    article,
+    collectionItem
   ])
 });

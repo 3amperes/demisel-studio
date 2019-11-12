@@ -35,11 +35,7 @@ export default {
         layout: "list",
         editModal: "dialog"
       },
-      of: [
-        {
-          type: "slide"
-        }
-      ]
+      of: [{ type: "collectionItem" }]
     }
   ]
 };
