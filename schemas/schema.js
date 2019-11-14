@@ -18,6 +18,8 @@ import push from "./push";
 import pushes from "./pushes";
 import article from "./article";
 import collectionItem from "./collectionItem";
+import outlet from "./outlet";
+import country from "./country";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -41,6 +43,8 @@ export default createSchema({
     push,
     pushes,
     article,
-    collectionItem
+    collectionItem,
+    outlet,
+    country
   ])
 });
