@@ -56,6 +56,12 @@ export default {
       type: "figure"
     },
     {
+      name: "color",
+      title: "Couleur",
+      type: "reference",
+      to: [{ type: "productColor" }]
+    },
+    {
       name: "description",
       title: "Description",
       type: "richText"

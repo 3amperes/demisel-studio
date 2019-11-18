@@ -6,6 +6,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 // We import object and document schemas
 import config from "./config";
 import category from "./category";
+import color from "./productColor";
 import model from "./model";
 import collection from "./collection";
 import price from "./price";
@@ -32,6 +33,7 @@ export default createSchema({
     // in the studio.
     config,
     category,
+    color,
     model,
     product,
     collection,
