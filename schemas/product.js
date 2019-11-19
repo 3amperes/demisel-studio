@@ -51,15 +51,25 @@ export default {
       ]
     },
     {
+      name: "colors",
+      title: "Couleurs",
+      type: "array",
+      validation: Rule => Rule.unique(),
+      options: {
+        layout: "list",
+        editModal: "popover"
+      },
+      of: [
+        {
+          type: "reference",
+          to: [{ type: "productColor" }]
+        }
+      ]
+    },
+    {
       name: "thumbnail",
       title: "Vignette",
       type: "figure"
-    },
-    {
-      name: "color",
-      title: "Couleur",
-      type: "reference",
-      to: [{ type: "productColor" }]
     },
     {
       name: "description",

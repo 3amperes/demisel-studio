@@ -1,7 +1,7 @@
 import React from "react";
 
 const Dot = ({ value }) => {
-  console.log("props", value);
+  // console.log("props", value);
   return (
     <div
       style={{
@@ -44,12 +44,12 @@ export default {
       title: "Réference",
       type: "color"
     }
-  ],
-  preview: {
-    select: {
-      title: "title",
-      color: "ref.hex"
-    },
-    component: Dot
-  }
+  ]
+  // preview: {
+  //   select: {
+  //     title: "title",
+  //     color: "ref.hex"
+  //   },
+  //   component: Dot
+  // }
 };
