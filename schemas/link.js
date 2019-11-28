@@ -21,7 +21,8 @@ export default {
     {
       name: "url",
       title: "Lien",
-      type: "url"
+      type: "url",
+      validation: Rule => Rule.uri({ allowRelative: true })
     }
   ]
 };
