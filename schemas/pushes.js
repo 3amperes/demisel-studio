@@ -18,16 +18,6 @@ export default {
       title: "Items",
       type: "array",
       of: [{ type: "push" }]
-    },
-    {
-      name: "footer",
-      title: "Footer",
-      type: "string"
-    },
-    {
-      name: "link",
-      title: "Lien",
-      type: "link"
     }
   ]
 };
