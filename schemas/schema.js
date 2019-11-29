@@ -21,6 +21,7 @@ import article from "./article";
 import collectionItem from "./collectionItem";
 import outlet from "./outlet";
 import country from "./country";
+import banner from "./banner";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -45,6 +46,7 @@ export default createSchema({
     push,
     pushes,
     article,
+    banner,
     collectionItem,
     outlet,
     country

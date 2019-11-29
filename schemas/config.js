@@ -8,6 +8,7 @@ export default {
       title: "Titre du site",
       type: "string"
     },
+    { name: "banner", title: "Bannière Promo", type: "banner" },
     {
       name: "carousel",
       title: "Carousel",
