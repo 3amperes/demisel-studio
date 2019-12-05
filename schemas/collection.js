@@ -12,11 +12,13 @@ export default {
       name: "slug",
       title: "Slug",
       type: "slug",
+      validation: Rule => Rule.required().warning("Obligatoire"),
       options: {
         source: "title",
         maxLength: 96
       }
     },
+    { name: "order", title: "Ordre d'affichage", type: "number" },
     {
       name: "thumbnail",
       title: "Vignette",

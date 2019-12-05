@@ -9,17 +9,6 @@ export default {
       type: "string",
       validation: Rule => Rule.required().warning("Obligatoire")
     },
-    // {
-    //   name: "slug",
-    //   title: "Slug",
-    //   type: "slug",
-    //   options: {
-    //     collapsible: true,
-    //     collapsed: true,
-    //     source: "title",
-    //     maxLength: 96
-    //   }
-    // },
     {
       name: "category",
       title: "Catégorie",

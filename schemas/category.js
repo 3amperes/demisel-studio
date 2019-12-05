@@ -21,6 +21,11 @@ export default {
         source: "title",
         maxLength: 96
       }
+    },
+    {
+      name: "thumbnail",
+      title: "Vignette",
+      type: "figure"
     }
   ]
 };

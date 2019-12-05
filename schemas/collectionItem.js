@@ -15,12 +15,12 @@ export default {
     },
     {
       name: "img1",
-      title: "image 1",
+      title: "image titre",
       type: "figure"
     },
     {
       name: "img2",
-      title: "image 2",
+      title: "image portée",
       type: "figure"
     },
     {
@@ -28,5 +28,12 @@ export default {
       title: "Lien",
       type: "link"
     }
-  ]
+  ],
+  preview: {
+    select: {
+      title: "title",
+      subtitle: "model.title",
+      media: "img2"
+    }
+  }
 };
