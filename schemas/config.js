@@ -34,6 +34,16 @@ export default {
       name: "menuBaseThumb",
       title: "Vignette de base du sous menu de navgation",
       type: "figure"
+    },
+    {
+      name: "cgu",
+      title: "Conditions générales de vente",
+      type: "richText"
+    },
+    {
+      name: "legal",
+      title: "Mentions légales",
+      type: "richText"
     }
   ]
 };
