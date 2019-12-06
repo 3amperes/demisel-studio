@@ -1,4 +1,5 @@
 import React from "react";
+import { FiDisc } from "react-icons/fi";
 
 const Dot = ({ value }) => {
   // console.log("props", value);
@@ -33,6 +34,7 @@ export default {
   name: "productColor",
   title: "Couleur",
   type: "document",
+  icon: FiDisc,
   fields: [
     {
       name: "title",

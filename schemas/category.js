@@ -1,7 +1,10 @@
+import { FiArchive } from "react-icons/fi";
+
 export default {
   name: "category",
   title: "Catégorie",
   type: "document",
+  icon: FiArchive,
   fields: [
     {
       name: "title",

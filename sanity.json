@@ -15,7 +15,11 @@
     "@sanity/desk-tool",
     "@sanity/color-input",
     "@sanity/dashboard",
-    "dashboard-widget-gatsby"
+    "dashboard-widget-gatsby",
+    "media",
+    "dashboard-widget-netlify",
+    "dashboard-widget-notes",
+    "content-model-graph"
   ],
   "parts": [
     {

@@ -1,7 +1,10 @@
+import { FiLayers } from "react-icons/fi";
+
 export default {
   name: "model",
   title: "Modèle",
   type: "document",
+  icon: FiLayers,
   fields: [
     {
       name: "title",

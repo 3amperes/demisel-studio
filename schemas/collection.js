@@ -1,7 +1,10 @@
+import { FiCamera } from "react-icons/fi";
+
 export default {
   name: "collection",
   title: "Collection",
   type: "document",
+  icon: FiCamera,
   fields: [
     {
       name: "title",

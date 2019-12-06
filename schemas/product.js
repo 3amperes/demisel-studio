@@ -1,7 +1,10 @@
+import { FiFeather } from "react-icons/fi";
+
 export default {
   name: "product",
   title: "Bijou",
   type: "document",
+  icon: FiFeather,
   fields: [
     {
       name: "title",

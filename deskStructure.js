@@ -1,4 +1,5 @@
 import S from "@sanity/desk-tool/structure-builder";
+import { FiSliders, FiFilter } from "react-icons/fi";
 
 const hiddenDocTypes = listItem => !["config"].includes(listItem.getId());
 
@@ -8,6 +9,7 @@ export default () =>
     .items([
       S.listItem()
         .title("Configuration")
+        .icon(FiSliders)
         .child(
           S.editor()
             .id("config")
@@ -19,6 +21,7 @@ export default () =>
       S.divider(),
       S.listItem()
         .title("Bijoux par catégorie")
+        .icon(FiFilter)
         .child(
           S.documentList()
             .title("Catégories")
@@ -35,6 +38,7 @@ export default () =>
         ),
       S.listItem()
         .title("Bijoux par modèle")
+        .icon(FiFilter)
         .child(
           S.documentList()
             .title("Catégories")
@@ -58,6 +62,7 @@ export default () =>
         ),
       S.listItem()
         .title("Bijoux par collection")
+        .icon(FiFilter)
         .child(
           S.documentList()
             .title("Collections")

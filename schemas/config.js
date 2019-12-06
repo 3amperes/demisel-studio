@@ -1,7 +1,10 @@
+import { FiSliders } from "react-icons/fi";
+
 export default {
   name: "config",
   title: "Configuration",
   type: "document",
+  icon: FiSliders,
   fields: [
     {
       name: "title",
