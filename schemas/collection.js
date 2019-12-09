@@ -28,6 +28,11 @@ export default {
       type: "figure"
     },
     {
+      name: "mobileThumbnail",
+      title: "Vignette pour le mobile",
+      type: "figure"
+    },
+    {
       name: "description",
       title: "Description",
       type: "richText"
