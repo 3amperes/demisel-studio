@@ -12,6 +12,11 @@ export default {
       type: "figure"
     },
     {
+      name: "mobileImage",
+      title: "Image mobile",
+      type: "figure"
+    },
+    {
       name: "title",
       title: "Titre",
       type: "string"
