@@ -12,16 +12,24 @@ export default {
       type: "string"
     },
     {
+      name: "editorial",
+      title: "Éditorial ?",
+      description: "Afficher cette collection dans la partie éditoriale",
+      type: "boolean"
+    },
+    { name: "order", title: "Ordre d'affichage", type: "number" },
+    {
       name: "slug",
       title: "Slug",
       type: "slug",
+      collapsible: true,
+      description: "un nom court pour les url : /collection/slug",
       validation: Rule => Rule.required().warning("Obligatoire"),
       options: {
         source: "title",
         maxLength: 96
       }
     },
-    { name: "order", title: "Ordre d'affichage", type: "number" },
     {
       name: "thumbnail",
       title: "Vignette",
