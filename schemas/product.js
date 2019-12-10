@@ -7,8 +7,14 @@ export default {
   icon: FiFeather,
   fields: [
     {
+      name: "model",
+      title: "Modèle",
+      type: "reference",
+      to: [{ type: "model" }]
+    },
+    {
       name: "title",
-      title: "Nom",
+      title: "Variante",
       type: "string",
       validation: Rule => Rule.required().warning("Obligatoire")
     },
@@ -18,13 +24,6 @@ export default {
       type: "reference",
       validation: Rule => Rule.required().warning("Obligatoire"),
       to: [{ type: "category" }]
-    },
-    {
-      name: "model",
-      title: "Modèle",
-      type: "reference",
-      description: "un modèle ?",
-      to: [{ type: "model" }]
     },
     {
       name: "collections",
@@ -91,7 +90,7 @@ export default {
     prepare(selection) {
       const { title, modelTitle, categoryName, media } = selection;
       return {
-        title: title,
+        title: `${title}`,
         subtitle: `${categoryName} ${modelTitle}`,
         media: media
       };
