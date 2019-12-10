@@ -49,7 +49,16 @@ export default {
   preview: {
     select: {
       title: "title",
+      categoryName: "category.shortName",
       media: "thumbnail"
+    },
+    prepare(selection) {
+      const { title, categoryName, media } = selection;
+      return {
+        title: title,
+        subtitle: categoryName,
+        media: media
+      };
     }
   }
 };
