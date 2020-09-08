@@ -1,13 +1,13 @@
-import React from "react";
-import { FiDisc } from "react-icons/fi";
+import React from 'react';
+import { FiDisc } from 'react-icons/fi';
 
 const Dot = ({ value }) => {
   // console.log("props", value);
   return (
     <div
       style={{
-        display: "flex",
-        alignItems: "center"
+        display: 'flex',
+        alignItems: 'center',
       }}
     >
       <div
@@ -15,14 +15,14 @@ const Dot = ({ value }) => {
           backgroundColor: value.color,
           width: 16,
           height: 16,
-          borderRadius: "50%",
-          margin: "0.5rem"
+          borderRadius: '50%',
+          margin: '0.5rem',
         }}
       />
       <h2
         style={{
-          fontSize: "1rem",
-          fontWeight: "normal"
+          fontSize: '1rem',
+          fontWeight: 'normal',
         }}
       >
         {value.title}
@@ -31,22 +31,23 @@ const Dot = ({ value }) => {
   );
 };
 export default {
-  name: "productColor",
-  title: "Couleur",
-  type: "document",
+  name: 'productColor',
+  title: 'Couleur',
+  type: 'document',
   icon: FiDisc,
   fields: [
     {
-      name: "title",
-      title: "Title",
-      type: "string"
+      name: 'title',
+      title: 'Title',
+      type: 'string',
     },
     {
-      name: "ref",
-      title: "Réference",
-      type: "color"
-    }
-  ]
+      name: 'ref',
+      title: 'Réference',
+      type: 'color',
+      validation: (Rule) => Rule.required(),
+    },
+  ],
   // preview: {
   //   select: {
   //     title: "title",
